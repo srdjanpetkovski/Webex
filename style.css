@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400&display=swap');
+:root {
+    --tamnoPlava: #1d527c;
+    --svetloPlava: #459ad3;
+    --orange: #fd7f45;
+    --tamnoSiva: #3c3b3c;
+    --svetloSiva: lightgray;
+    --bela: #fff;
+    --transition: .3s ease;
+    --padding: 100px 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--tamnoSiva);
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: var(--transition);
+}
+/************
+nav
+************/
+nav {
+    background: linear-gradient(to right, var(--orange), var(--tamnoPlava));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+nav h1, ul, a {
+    color: var(--bela);
+}
+nav ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin-left: 15px;
+}
+nav ul li a:hover {
+    color: var(--svetloSiva);
+    transition: var(--transition);
+}
+.logo {
+    font-size: 2rem;
+}
+nav a {
+    letter-spacing: 2px;
+}
+/************
+header
+************/
+header {
+    background-image: linear-gradient(rgba(29, 82, 124, .8), rgba(253, 127, 69, .8)), url(img/baloon.jpg);
+    background-size: cover;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--bela);
+    flex-wrap: wrap;
+}
+header h1 strong {
+    font-style: italic;
+    font-weight: 400;
+}
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.button1  {
+    text-transform: uppercase;
+    color: var(--bela);
+    background: transparent;
+    padding: 10px 15px;
+    border: 1px solid var(--bela);
+    font-size: 1.1rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.button1:hover {
+    color: var(--tamnoSiva);
+    transition: var(--transition);
+}
+/************
+about
+************/
+.about {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+}
+.about img {
+    width: 100%;
+    box-shadow: 7px 7px var(--tamnoPlava);
+}
+.about article {
+    flex: 1;
+}
+.about article:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about p {
+    padding-right: 50px;
+    text-align: justify;
+}
+.about hr {
+    width: 30%;
+    height: 3px;
+    background: var(--tamnoPlava);
+    margin-bottom: 15px;
+}
+.about h2 {
+    color: var(--tamnoPlava);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+/************
+services
+************/
+.services  {
+    background-image: linear-gradient(rgba(29, 82, 124,.9),rgba(29, 82, 124,.9)), url(img/header.jpg);
+    padding: var(--padding);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--bela);
+}
+.services .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services .container article {
+    flex: 1;
+}
+.services .container article:first-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.services .container article:first-child i {
+    font-size: 5rem;
+    color: var(--orange);
+    flex: 0 0 50%;
+}
+.services hr {
+    width: 30%;
+    height: 3px;
+    background: var(--orange);
+    margin-bottom: 15px;
+}
+.services p {
+    padding: 30px 0;
+}
+.services h2 {
+    color: var(--bela);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+/************
+blog
+************/
+.blog {
+    padding: var(--padding);
+}
+.blog h2 {
+    color: var(--tamnoPlava);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.blog img {
+    width: 100%;
+}
+.blog hr {
+    width: 10%;
+    height: 3px;
+    background: var(--tamnoPlava);
+    margin-bottom: 15px;
+    margin: auto;
+}
+.blog article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.blog article div {
+    flex: 0 0 31.5%;
+    text-align: center;
+}
+.blog h3 {
+    color: var(--tamnoPlava);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.blog p {
+    text-align: justify;
+    margin-top: 10px;
+}
+.button2  {
+    text-transform: uppercase;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: var(--bela);
+    background: var(--tamnoPlava);
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+}
+.button2:hover  {
+    color: var(--orange);
+}
+/************
+footer
+************/
+footer {
+    background-image: url(img/baloon.jpg);
+    background: linear-gradient(to right, var(--orange), var(--tamnoPlava));
+    text-align: center;
+    padding: 60px 0;
+}
+footer p {
+    color: var(--bela);
+}
+footer i {
+    color: var(--tamnoPlava);
+    font-size: 1.5rem;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+/************
+responsive
+************/
+@media (max-width: 768px) {
+    nav ul,
+    .logo {
+        margin: auto;
+    }
+    header h1 {
+        font-size: 2.1rem;
+    }
+    header p {
+        padding: 0 10px;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about hr {
+        margin: 0 auto 20px auto;
+    }
+    .about p {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .services .container article {
+        flex: 0 0 100%;
+    }
+    .blog article div {
+        flex: 0 0 100%;
+    }
+    .services article:first-child {
+        order: 1;
+    }
+    .services {
+        text-align: center;
+    }
+    .services hr {
+        margin: auto;
+    }
+    .services p {
+        padding: 13px;
+    }
+}
